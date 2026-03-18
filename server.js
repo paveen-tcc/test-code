@@ -5,7 +5,7 @@ const port = process.env.PORT || 8080;
 const server = http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'application/json' });
   res.end(JSON.stringify({
-    message: 'Hello World from Cloud Run!',
+    message: 'Hello World !',
     timestamp: new Date().toISOString(),
     path: req.url,
   }));
