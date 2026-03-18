@@ -1,0 +1,12 @@
+{
+  "name": "hello-world-test-app",
+  "version": "1.0.0",
+  "description": "A minimal Node.js app for testing Azure to GCP Cloud Run migration",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
