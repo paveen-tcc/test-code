@@ -26,7 +26,7 @@ function parseJdbcUrl(jdbcUrl) {
         },
     };
 }
-const jdbcUrl = process.env.DATABASE_URL || '';
+const jdbcUrl = process.env.DATABASE_URL || 'jdbc:sqlserver://az-gcp-migrate-server-01.database.windows.net:1433;database=az-gcp-migrate-db-01;user=sql-owner@az-gcp-migrate-server-01;password=admin@123;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;';
 const config = parseJdbcUrl(jdbcUrl);
 let pool = null;
 export async function getPool() {
